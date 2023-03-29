@@ -1,0 +1,29 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <context-param>
+  <param-name>spdiscount</param-name>
+  <param-value>10</param-value>
+  </context-param>
+  
+  <servlet>
+  <servlet-name>shoe</servlet-name>
+  <servlet-class>servlet_Demo.Shoe</servlet-class>
+  
+  <init-param>
+  <param-name>discount</param-name>
+  <param-value>25</param-value>
+  </init-param>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>shoe</servlet-name>
+  <url-pattern>/shoe</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
